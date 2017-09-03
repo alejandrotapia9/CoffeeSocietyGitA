@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.jaat.coffeesociety.Inicio">
+    tools:context="com.jaat.coffeesociety.Menu">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -15,12 +15,12 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
+            android:background="#5e3306"
             app:popupTheme="@style/AppTheme.PopupOverlay" />
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_inicio" />
+    <include layout="@layout/content_menu" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
@@ -28,6 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        app:backgroundTint="@android:color/holo_red_dark"
+        app:srcCompat="@android:drawable/ic_popup_reminder" />
 
 </android.support.design.widget.CoordinatorLayout>
